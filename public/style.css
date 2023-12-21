@@ -1,0 +1,31 @@
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+button {
+  background: none;
+  border: 1px solid #000;
+}
+
+li>button {
+  background: none;
+  border: 1px solid gray;
+  transition: 0.5s;
+  width: 30px;
+  height: 30px;
+}
+
+li .edit {
+  background: none;
+  border: 1px solid gray;
+  transition: 0.5s;
+  width: 50px;
+  height: 30px;
+}
+
+li:not(:hover)>button {
+  opacity: 0.2;
+}
